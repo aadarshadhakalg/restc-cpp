@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 if (UNIX)
     # Ninja creates too many problems while maintaining
     # compatibility with old and new versions of Linux/Cmake
-    set (CMAKE_GENERATOR "Unix Makefiles" CACHE INTERNAL "" FORCE)
+    set (CMAKE_GENERATOR "Ninja" CACHE INTERNAL "" FORCE)
 endif()
 
 if (DEFINED ENV{RESTC_CPP_VERSION})
